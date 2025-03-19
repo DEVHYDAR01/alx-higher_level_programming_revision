@@ -7,6 +7,4 @@ def new_in_list(my_list, idx, element):
     new_list = [i for i in my_list]
     new_list[idx] = element
     return new_list
-
-# new_list = [for i in range(len(my_list)) if i == idx]
             
