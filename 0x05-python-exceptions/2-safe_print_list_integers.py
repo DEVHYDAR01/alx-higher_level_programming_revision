@@ -21,8 +21,3 @@ print("nb_print: {:d}".format(nb_print))
 
 nb_print = safe_print_list_integers(my_list, len(my_list) + 2)
 print("nb_print: {:d}".format(nb_print))
-
-# my_list = [1, 2, 3, "School", 4, 5, [1, 2, 3]]
-# for i in range(len(my_list)):
-#     if type(my_list[i]) == str or type(my_list[i]) == list:
-#         print(my_list[i])
