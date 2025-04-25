@@ -1,19 +1,5 @@
 #!/usr/bin/python3
-import sys
-def safe_function(fct, *args):
-    try:
-        return fct(args[0], args[1])
-    except IndexError as e:
-        sys.stderr.write("Exception: {}\n".format(e))
-    except ZeroDivisionError as e:
-        sys.stderr.write("Exception: {}\n".format(e))
-
-
-
-
-
-
-
+safe_function = __import__('101-safe_function').safe_function
 
 
 def my_div(a, b):
