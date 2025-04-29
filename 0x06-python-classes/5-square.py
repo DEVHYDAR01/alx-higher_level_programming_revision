@@ -26,26 +26,3 @@ class Square:
             print()
         if self.__size == 0:
             print("", end="\n")
-
-
-
-my_square = Square(3)
-my_square.my_print()
-
-print("--")
-
-my_square.size = 10
-my_square.my_print()
-
-print("--")
-
-my_square.size = 0
-my_square.my_print()
-
-print("--")
-
-
-# for i in range(3):
-#     for j in range(3):
-#         print("#", end="")
-#     print()
