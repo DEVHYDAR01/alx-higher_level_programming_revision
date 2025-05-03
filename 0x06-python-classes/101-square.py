@@ -42,12 +42,3 @@ class Square:
             line = " " * self.__position[0] + "#" * self.__size
             lines.append(line)
         return "\n".join(lines)
-
-
-my_square = Square(5, (0, 0))
-print(my_square)
-
-print("--")
-
-my_square = Square(5, (4, 1))
-print(my_square)
