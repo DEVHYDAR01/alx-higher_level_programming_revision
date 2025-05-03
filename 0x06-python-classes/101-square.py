@@ -3,7 +3,7 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
-        self.my_print()
+        
     
     @property
     def size(self):
@@ -31,19 +31,23 @@ class Square:
         return self.__size **2
     
     def my_print(self):
-        for _ in range(self.__position[1]):
-            print()  # Blank line for vertical position
+        print(self.__str__())
+    
+    def __str__(self):
+        if self.__size == 0:
+            return ""
 
-        # Now, print the square with the correct horizontal positioning
-        for i in range(self.__size):
-            print(" " * self.__position[0] + "#" * self.__size)
+        lines = [""] * self.__position[1]  # Vertical offset
+        for _ in range(self.__size):
+            line = " " * self.__position[0] + "#" * self.__size
+            lines.append(line)
+        return "\n".join(lines)
 
 
+my_square = Square(5, (0, 0))
+print(my_square)
 
-# my_square = Square(5, (0, 0))
-# print(my_square)
+print("--")
 
-# print("--")
-
-# my_square = Square(5, (4, 1))
-# print(my_square)
+my_square = Square(5, (4, 1))
+print(my_square)
