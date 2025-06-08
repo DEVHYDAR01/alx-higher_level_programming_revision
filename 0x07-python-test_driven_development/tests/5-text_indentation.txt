@@ -1,0 +1,8 @@
+########################################
+Tests for the text indentation function
+########################################
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+>>> text_indentation(637286437482637483264864284)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
